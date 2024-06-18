@@ -604,7 +604,7 @@ class AccountSettingsPage extends React.Component {
               messages['account.settings.field.email.help.text'],
               { siteName: getConfig().SITE_NAME },
             )}
-            isEditable={this.isEditable('email')}
+            isEditable={false}
             {...editableFieldProps}
           />
           {this.renderSecondaryEmailField(editableFieldProps)}
