@@ -204,7 +204,7 @@ EmailField.defaultProps = {
   confirmationValue: undefined,
   helpText: undefined,
   isEditing: false,
-  isEditable: true,
+  isEditable: false,
 };
 
 export default connect(editableFieldSelector, {
