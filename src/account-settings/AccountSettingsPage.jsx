@@ -67,7 +67,7 @@ class AccountSettingsPage extends React.Component {
       '#demographics-information': React.createRef(),
       '#social-media': React.createRef(),
       '#site-preferences': React.createRef(),
-      '#linked-accounts': React.createRef(),
+      //'#linked-accounts': React.createRef(),
       '#delete-account': React.createRef(),
     };
   }
@@ -758,7 +758,7 @@ class AccountSettingsPage extends React.Component {
           />
         </div>
 
-        <div className="account-section pt-3 mb-5" id="linked-accounts" ref={this.navLinkRefs['#linked-accounts']}>
+{/*         <div className="account-section pt-3 mb-5" id="linked-accounts" ref={this.navLinkRefs['#linked-accounts']}>
           <h2 className="section-heading h4 mb-3">{this.props.intl.formatMessage(messages['account.settings.section.linked.accounts'])}</h2>
           <p>
             {this.props.intl.formatMessage(
@@ -767,7 +767,7 @@ class AccountSettingsPage extends React.Component {
             )}
           </p>
           <ThirdPartyAuth />
-        </div>
+        </div> */}
 
         {getConfig().ENABLE_ACCOUNT_DELETION
           && (
