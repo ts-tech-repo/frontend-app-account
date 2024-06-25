@@ -28,8 +28,8 @@ const JumpNav = ({
           'demographics-information',
           'social-media',
           'site-preferences',
-          'linked-accounts',
-          'delete-account',
+          // 'linked-accounts',
+          // 'delete-account',
         ]}
         className="list-unstyled"
         currentClassName="font-weight-bold"
