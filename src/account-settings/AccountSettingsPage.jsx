@@ -683,7 +683,6 @@ class AccountSettingsPage extends React.Component {
             isEditable={true}
             onChange={this.handleEditableFieldChange}
             onSubmit={this.handleSubmitCompany}
-            {...editableFieldProps}
           />
           <EditableSelectField
             name="gender"
