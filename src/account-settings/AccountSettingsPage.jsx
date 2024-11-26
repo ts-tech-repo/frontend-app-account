@@ -681,8 +681,7 @@ class AccountSettingsPage extends React.Component {
             value={this.props.formValues.company}
             label={this.props.intl.formatMessage(messages['account.settings.field.company'])}
             isEditable={true}
-            onChange={this.handleEditableFieldChange}
-            onSubmit={this.handleSubmitCompany}
+            {...editableFieldProps}
           />
           <EditableSelectField
             name="gender"
