@@ -671,6 +671,14 @@ class AccountSettingsPage extends React.Component {
             {...editableFieldProps}
           />
           <EditableSelectField
+            name="company"
+            type="text"
+            value=''
+            label={this.props.intl.formatMessage(messages['account.settings.field.company'])}
+            emptyLabel={this.props.intl.formatMessage(messages['account.settings.field.company.empty'])}
+            {...editableFieldProps}
+          />
+          <EditableSelectField
             name="gender"
             type="select"
             value={this.props.formValues.gender}
