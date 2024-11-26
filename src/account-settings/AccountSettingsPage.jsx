@@ -169,6 +169,10 @@ class AccountSettingsPage extends React.Component {
     }
   };
 
+  handleSubmitCompany = (formId, values) => {
+      this.props.saveSettings(formId, values);
+  };
+
   handleSubmitVerifiedName = (formId, values) => {
     if (Object.keys(this.props.drafts).includes('useVerifiedNameForCerts')) {
       this.props.saveSettings('useVerifiedNameForCerts', this.props.formValues.useVerifiedNameForCerts);
@@ -676,6 +680,8 @@ class AccountSettingsPage extends React.Component {
             value={this.props.formValues.company}
             label={this.props.intl.formatMessage(messages['account.settings.field.company'])}
             isEditable={true}
+            onChange={this.handleEditableFieldChange}
+            onSubmit={this.handleSubmitCompany}
             {...editableFieldProps}
           />
           <EditableSelectField
