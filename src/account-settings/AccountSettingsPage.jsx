@@ -669,6 +669,7 @@ class AccountSettingsPage extends React.Component {
             type="text"
             value={this.props.formValues.level_of_education}
             label={this.props.intl.formatMessage(messages['account.settings.field.education'])}
+            isEditable={true}
             {...editableFieldProps}
           />
           <EditableField
