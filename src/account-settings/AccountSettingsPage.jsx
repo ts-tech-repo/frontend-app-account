@@ -170,6 +170,7 @@ class AccountSettingsPage extends React.Component {
   };
 
   handleSubmitCompany = (formId, values) => {
+      console.log(values);
       this.props.saveSettings(formId, values);
   };
 
