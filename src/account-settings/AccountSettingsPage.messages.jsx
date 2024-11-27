@@ -422,6 +422,11 @@ const messages = defineMessages({
     defaultMessage: 'Company',
     description: 'Label for account settings company field.',
   },
+  'account.settings.field.designation': {
+    id: 'account.settings.field.designation',
+    defaultMessage: 'Designation',
+    description: 'Label for account settings designation field.',
+  },
   
   'account.settings.field.gender': {
     id: 'account.settings.field.gender',

@@ -664,12 +664,15 @@ class AccountSettingsPage extends React.Component {
             {this.props.intl.formatMessage(messages['account.settings.section.profile.information'])}
           </h2>
 
-          <EditableField
+          <EditableSelectField
             name="level_of_education"
-            type="text"
+            type="select"
             value={this.props.formValues.level_of_education}
+            options={getConfig().ENABLE_COPPA_COMPLIANCE
+              ? educationLevelOptions.filter(option => option.value !== 'el')
+              : educationLevelOptions}
             label={this.props.intl.formatMessage(messages['account.settings.field.education'])}
-            isEditable={true}
+            emptyLabel={this.props.intl.formatMessage(messages['account.settings.field.education.empty'])}
             {...editableFieldProps}
           />
           <EditableField
@@ -677,6 +680,14 @@ class AccountSettingsPage extends React.Component {
             type="text"
             value={this.props.formValues.company}
             label={this.props.intl.formatMessage(messages['account.settings.field.company'])}
+            isEditable={true}
+            {...editableFieldProps}
+          />
+          <EditableField
+            name="designation"
+            type="text"
+            value={this.props.formValues.company}
+            label={this.props.intl.formatMessage(messages['account.settings.field.designation'])}
             isEditable={true}
             {...editableFieldProps}
           />
