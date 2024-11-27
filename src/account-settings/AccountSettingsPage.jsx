@@ -686,7 +686,7 @@ class AccountSettingsPage extends React.Component {
           <EditableField
             name="designation"
             type="text"
-            value={this.props.formValues.company}
+            value={this.props.formValues.designation}
             label={this.props.intl.formatMessage(messages['account.settings.field.designation'])}
             isEditable={true}
             {...editableFieldProps}
@@ -871,6 +871,7 @@ AccountSettingsPage.propTypes = {
     country: PropTypes.string,
     level_of_education: PropTypes.string,
     company: PropTypes.string,
+    designation: PropTypes.string,
     gender: PropTypes.string,
     language_proficiencies: PropTypes.string,
     pending_name_change: PropTypes.string,
