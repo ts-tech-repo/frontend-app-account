@@ -169,11 +169,6 @@ class AccountSettingsPage extends React.Component {
     }
   };
 
-  handleSubmitCompany = (formId, values) => {
-      console.log(values);
-      this.props.saveSettings(formId, values);
-  };
-
   handleSubmitVerifiedName = (formId, values) => {
     if (Object.keys(this.props.drafts).includes('useVerifiedNameForCerts')) {
       this.props.saveSettings('useVerifiedNameForCerts', this.props.formValues.useVerifiedNameForCerts);
