@@ -417,6 +417,17 @@ const messages = defineMessages({
     description: 'Selected by the user if they have a type of education not described by the other choices.',
   },
 
+  'account.settings.field.company': {
+    id: 'account.settings.field.company',
+    defaultMessage: 'Company',
+    description: 'Label for account settings company field.',
+  },
+  'account.settings.field.designation': {
+    id: 'account.settings.field.designation',
+    defaultMessage: 'Designation',
+    description: 'Label for account settings designation field.',
+  },
+  
   'account.settings.field.gender': {
     id: 'account.settings.field.gender',
     defaultMessage: 'Gender',

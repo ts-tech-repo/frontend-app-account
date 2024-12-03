@@ -670,6 +670,22 @@ class AccountSettingsPage extends React.Component {
             emptyLabel={this.props.intl.formatMessage(messages['account.settings.field.education.empty'])}
             {...editableFieldProps}
           />
+          <EditableField
+            name="company"
+            type="text"
+            value={this.props.formValues.company}
+            label={this.props.intl.formatMessage(messages['account.settings.field.company'])}
+            isEditable={true}
+            {...editableFieldProps}
+          />
+          <EditableField
+            name="designation"
+            type="text"
+            value={this.props.formValues.designation}
+            label={this.props.intl.formatMessage(messages['account.settings.field.designation'])}
+            isEditable={true}
+            {...editableFieldProps}
+          />
           <EditableSelectField
             name="gender"
             type="select"
@@ -849,6 +865,8 @@ AccountSettingsPage.propTypes = {
     year_of_birth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
     country: PropTypes.string,
     level_of_education: PropTypes.string,
+    company: PropTypes.string,
+    designation: PropTypes.string,
     gender: PropTypes.string,
     language_proficiencies: PropTypes.string,
     pending_name_change: PropTypes.string,
