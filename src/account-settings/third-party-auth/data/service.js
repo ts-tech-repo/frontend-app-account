@@ -15,7 +15,7 @@ export async function getThirdPartyAuthProviders() {
     }));
   } catch (error) {
     if (error.response && error.response.status === 502) {
-      document.querySelector('.row .col-md-10 > div:not([id]):not([class])').innerHTML = 'loading';
+      document.querySelector('.row .col-md-10 > div:not([id]):not([class])').innerHTML = 'We are unable to handle your request right now. We will be back very soon. Please try again later.';
       console.log('coming here');
     }
     throw error;
