@@ -13,7 +13,7 @@ const messages = defineMessages({
   },
   'account.settings.loading.error': {
     id: 'account.settings.loading.error',
-    defaultMessage: 'Error: {error}',
+    defaultMessage: 'There seems to be a network issue. Please check your connection and try again.',
     description: 'Message when data failed to load',
   },
   'account.settings.banner.beta.language': {
