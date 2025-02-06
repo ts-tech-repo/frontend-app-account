@@ -16,7 +16,6 @@ export async function getThirdPartyAuthProviders() {
   } catch (error) {
     if (error.response && error.response.status === 502) {
       document.querySelector('.row .col-md-10 > div:not([id]):not([class])').innerHTML = 'There seems to be a network issue. Please check your connection and try again.';
-      console.log('coming here');
     }
     throw error;
   }
